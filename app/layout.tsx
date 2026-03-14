@@ -63,6 +63,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-1427392565221232" />
+      </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
         <Script
           async
@@ -76,12 +79,6 @@ export default function RootLayout({
 
           gtag('config', 'G-4WC70CC0HK');`}
         </Script>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1427392565221232"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         {children}
       </body>
     </html>
