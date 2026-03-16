@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function robots(): MetadataRoute.Robots {
     // Replace with your actual production domain
-    const baseUrl = 'https://invoiceflow.app';
+    const baseUrl = 'https://easyinvofy.com';
 
     return {
         rules: {
