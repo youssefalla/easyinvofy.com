@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Cookie Policy | EasyInvofy',
+  description: 'Read the EasyInvofy cookie policy.',
+  alternates: {
+    canonical: 'https://easyinvofy.com/cookies',
+  },
+};
 
 export default function CookiePolicy() {
   return (

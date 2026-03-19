@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Terms of Service | EasyInvofy',
+  description: 'Read the EasyInvofy terms of service.',
+  alternates: {
+    canonical: 'https://easyinvofy.com/terms',
+  },
+};
 
 export default function TermsOfService() {
   return (

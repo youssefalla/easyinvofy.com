@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft, Zap, Shield, Heart } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'About Us | EasyInvofy',
+  description: 'Learn about EasyInvofy — a free online invoice generator built for freelancers and small businesses.',
+  alternates: {
+    canonical: 'https://easyinvofy.com/about',
+  },
+};
 
 export default function AboutPage() {
   return (

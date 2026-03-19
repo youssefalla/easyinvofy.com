@@ -1,5 +1,14 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy | EasyInvofy',
+  description: 'Read the EasyInvofy privacy policy. Your data stays on your device — we never store or transmit your financial information.',
+  alternates: {
+    canonical: 'https://easyinvofy.com/privacy',
+  },
+};
 
 export default function PrivacyPolicy() {
   return (
