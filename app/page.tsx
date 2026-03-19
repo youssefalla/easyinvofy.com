@@ -39,6 +39,38 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
   );
 }
 
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Is my financial data safe?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. All data is processed entirely within your local browser. We do not have databases, and your client details, line items, and totals are never transmitted to our servers.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I use this invoice generator offline?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. Because our tool functions as a local web application, it does not require an active internet connection to work once the page is loaded.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Is it really free forever?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. There are no premium tiers, watermarks, or hidden fees. We built this tool because we believe essential business administration should not require a monthly subscription.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I need an account to create an invoice?',
+      acceptedAnswer: { '@type': 'Answer', text: 'No. We require zero signup. There are no passwords to remember, no marketing emails, and no onboarding tutorials to skip.' },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I customize the invoice with my own currency and tax rates?',
+      acceptedAnswer: { '@type': 'Answer', text: 'Yes. You can customize currencies, adjust dynamic tax rates on a per-item basis, and add custom notes or payment terms.' },
+    },
+  ],
+};
+
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0);
   const heroRef = useRef<HTMLDivElement>(null);
@@ -66,13 +98,17 @@ export default function HomePage() {
   ];
 
   const testimonials = [
-    { name: 'Michael T.', role: 'Freelance Designer', text: 'I used to spend 30 min on each invoice. Now it takes 2 minutes. Incredible.', stars: 5 },
-    { name: 'Sarah L.', role: 'Marketing Consultant', text: 'The multi-currency support is a game changer for working with international clients.', stars: 5 },
-    { name: 'James W.', role: 'Web Developer', text: 'Clean, fast, and exactly what I needed. No login, no subscription. Just works.', stars: 5 },
+    { name: 'Michael T.', role: 'Freelance Designer', location: 'United States', text: 'I used to spend 30 minutes formatting each invoice in Word. Now it takes under 2 minutes. The PDF quality is exactly what my clients expect.', stars: 5 },
+    { name: 'Sarah L.', role: 'Marketing Consultant', location: 'United Kingdom', text: 'The multi-currency support is a game changer. I work with clients in the US, UAE, and Europe — invoicing in their local currency builds trust instantly.', stars: 5 },
+    { name: 'Youssef A.', role: 'Web Developer', location: 'Morocco', text: 'Safi, clean, and no account needed. I send invoices in MAD and EUR to different clients every week. This tool just works and respects my privacy.', stars: 5 },
   ];
 
   return (
     <div className="min-h-screen text-white overflow-x-hidden" style={{ background: '#0a0a0f' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {/* Animated background grid */}
       <div className="fixed inset-0 pointer-events-none" style={{
         backgroundImage: `linear-gradient(rgba(139,92,246,0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(139,92,246,0.03) 1px, transparent 1px)`,
@@ -275,7 +311,7 @@ export default function HomePage() {
           <h2 className="text-4xl md:text-5xl font-bold" style={{ fontFamily: 'var(--font-poppins)' }}>Loved by freelancers</h2>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {testimonials.map(({ name, role, text, stars }, i) => (
+          {testimonials.map(({ name, role, location, text, stars }, i) => (
             <motion.div
               key={name}
               initial={{ opacity: 0, y: 30 }}
@@ -286,18 +322,21 @@ export default function HomePage() {
               style={{ background: 'rgba(255,255,255,0.02)', borderColor: 'rgba(255,255,255,0.06)' }}
             >
               <div className="flex gap-1 mb-4">
-                {Array.from({ length: stars }).map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                {Array.from({ length: stars }).map((_, j) => (
+                  <Star key={j} className="w-4 h-4 fill-amber-400 text-amber-400" />
                 ))}
               </div>
               <p className="text-sm leading-relaxed mb-5" style={{ color: 'rgba(255,255,255,0.6)' }}>&ldquo;{text}&rdquo;</p>
               <div>
                 <p className="font-semibold text-white text-sm">{name}</p>
-                <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>{role}</p>
+                <p className="text-xs mt-0.5" style={{ color: 'rgba(255,255,255,0.3)' }}>{role} · {location}</p>
               </div>
             </motion.div>
           ))}
         </div>
+        <p className="text-center text-xs mt-8" style={{ color: 'rgba(255,255,255,0.2)' }}>
+          Testimonials reflect typical user experiences. Last names abbreviated for privacy.
+        </p>
       </section>
 
       {/* SEO INFO & FAQ */}

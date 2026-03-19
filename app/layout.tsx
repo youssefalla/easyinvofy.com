@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { Inter, Poppins } from 'next/font/google';
 import './globals.css';
+import CookieConsent from '@/components/CookieConsent';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -68,20 +69,42 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-adsense-account" content="ca-pub-1427392565221232" />
+        <Script
+          id="schema-org"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebApplication',
+              name: 'EasyInvofy',
+              url: 'https://easyinvofy.com',
+              description: 'Free online invoice generator. No signup required, offline-first, and 100% free forever.',
+              applicationCategory: 'BusinessApplication',
+              operatingSystem: 'Web Browser',
+              offers: {
+                '@type': 'Offer',
+                price: '0',
+                priceCurrency: 'USD',
+              },
+              featureList: [
+                'Multi-currency support (USD, EUR, GBP, MAD, AED and more)',
+                'Professional PDF export',
+                'No signup required',
+                'Offline-first architecture',
+                'Client management',
+                'Revenue analytics',
+              ],
+              publisher: {
+                '@type': 'Organization',
+                name: 'EasyInvofy',
+                url: 'https://easyinvofy.com',
+              },
+            }),
+          }}
+        />
       </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`}>
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-4WC70CC0HK"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-4WC70CC0HK');`}
-        </Script>
+        <CookieConsent />
         {children}
       </body>
     </html>
