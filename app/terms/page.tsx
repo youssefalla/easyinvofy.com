@@ -22,18 +22,18 @@ export default function TermsOfService() {
         <div className="space-y-8 text-zinc-300 leading-relaxed">
           <section>
             <p className="mb-4">Last updated: {new Date().toLocaleDateString()}</p>
-            <p>Welcome to InvoiceFlow. By accessing or using our website, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, then you may not access the service.</p>
+            <p>Welcome to EasyInvofy. By accessing or using our website, you agree to be bound by these Terms of Service. If you disagree with any part of the terms, then you may not access the service.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">1. Use of the Service</h2>
-            <p className="mb-4">InvoiceFlow provides a free, offline-first tool to generate PDF invoices. You agree to use the Service only for lawful purposes.</p>
+            <p className="mb-4">EasyInvofy provides a free, offline-first tool to generate PDF invoices. You agree to use the Service only for lawful purposes.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">2. Accuracy and Responsibility</h2>
             <p className="font-medium text-amber-400 mb-2">You are solely responsible for the content and accuracy of the invoices you generate.</p>
-            <p>InvoiceFlow serves strictly as a formatting and generation tool. We do not verify the legal validity, mathematical accuracy, or tax compliance of the documents you create. It is your responsibility to ensure that the invoices meet the legal and financial requirements of your jurisdiction.</p>
+            <p>EasyInvofy serves strictly as a formatting and generation tool. We do not verify the legal validity, mathematical accuracy, or tax compliance of the documents you create. It is your responsibility to ensure that the invoices meet the legal and financial requirements of your jurisdiction.</p>
           </section>
 
           <section>
@@ -48,12 +48,12 @@ export default function TermsOfService() {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">5. Disclaimer of Warranties</h2>
-            <p>The Service is provided on an "AS IS" and "AS AVAILABLE" basis. InvoiceFlow makes no representations or warranties of any kind, express or implied, as to the operation of the service, or the information, content, or materials included.</p>
+            <p>The Service is provided on an "AS IS" and "AS AVAILABLE" basis. EasyInvofy makes no representations or warranties of any kind, express or implied, as to the operation of the service, or the information, content, or materials included.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">6. Limitation of Liability</h2>
-            <p>In no event shall InvoiceFlow, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.</p>
+            <p>In no event shall EasyInvofy, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service.</p>
           </section>
         </div>
       </div>

@@ -87,7 +87,7 @@ export default function HomePage() {
     { icon: TrendingUp, title: 'Revenue Analytics', desc: 'Track your earnings, pending payments, and overdue invoices with beautiful real-time dashboards.', accent: '#fb923c' },
     { icon: Globe, title: 'Multi-Currency', desc: 'Invoice clients worldwide in MAD, USD, EUR, AED, GBP and more — all in one place.', accent: '#38bdf8' },
     { icon: Shield, title: 'PDF Export', desc: 'Generate pixel-perfect PDF invoices with your logo, bank details and custom notes.', accent: '#f472b6' },
-    { icon: Moon, title: 'Dark Mode', desc: 'Work comfortably day or night. InvoiceFlow adapts to your environment automatically.', accent: '#facc15' },
+    { icon: Moon, title: 'Dark Mode', desc: 'Work comfortably day or night. EasyInvofy adapts to your environment automatically.', accent: '#facc15' },
   ];
 
   const steps = [
@@ -124,7 +124,7 @@ export default function HomePage() {
           <div className="w-9 h-9 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #7c3aed, #a78bfa)' }}>
             <ReceiptText className="w-5 h-5 text-white" />
           </div>
-          <span className="font-bold text-lg tracking-tight" style={{ fontFamily: 'var(--font-poppins)' }}>InvoiceFlow</span>
+          <span className="font-bold text-lg tracking-tight" style={{ fontFamily: 'var(--font-poppins)' }}>EasyInvofy</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm" style={{ color: 'rgba(255,255,255,0.5)' }}>
           <a href="#features" className="hover:text-white transition-colors">Features</a>
@@ -419,9 +419,9 @@ export default function HomePage() {
           <div className="w-7 h-7 rounded-lg flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #7c3aed, #a78bfa)' }}>
             <ReceiptText className="w-4 h-4 text-white" />
           </div>
-          <span className="font-bold text-sm" style={{ fontFamily: 'var(--font-poppins)', color: 'rgba(255,255,255,0.7)' }}>InvoiceFlow</span>
+          <span className="font-bold text-sm" style={{ fontFamily: 'var(--font-poppins)', color: 'rgba(255,255,255,0.7)' }}>EasyInvofy</span>
         </div>
-        <p className="text-xs" style={{ color: 'rgba(255,255,255,0.2)' }}>© {new Date().getFullYear()} InvoiceFlow · Built for professionals</p>
+        <p className="text-xs" style={{ color: 'rgba(255,255,255,0.2)' }}>© {new Date().getFullYear()} EasyInvofy · Built for professionals</p>
         <div className="flex gap-4 md:gap-6 text-xs flex-wrap justify-center" style={{ color: 'rgba(255,255,255,0.2)' }}>
           <a href="#features" className="hover:text-white transition-colors" style={{ color: 'inherit' }}>Features</a>
           <a href="#how" className="hover:text-white transition-colors" style={{ color: 'inherit' }}>How it works</a>

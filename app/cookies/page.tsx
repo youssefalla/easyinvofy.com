@@ -22,12 +22,12 @@ export default function CookiePolicy() {
         <div className="space-y-8 text-zinc-300 leading-relaxed">
           <section>
             <p className="mb-4">Last updated: {new Date().toLocaleDateString()}</p>
-            <p>This Cookie Policy explains how InvoiceFlow uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.</p>
+            <p>This Cookie Policy explains how EasyInvofy uses cookies and similar technologies to recognize you when you visit our website. It explains what these technologies are and why we use them, as well as your rights to control our use of them.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">1. Local Storage (Not Cookies)</h2>
-            <p className="mb-4">It is important to understand that InvoiceFlow relies primarily on your browser's <strong>Local Storage</strong>, not cookies, to function. When you add a client, update your company details, or create an invoice, that data is saved locally on your device using Local Storage. This allows the application to remain fast, offline-capable, and entirely private.</p>
+            <p className="mb-4">It is important to understand that EasyInvofy relies primarily on your browser's <strong>Local Storage</strong>, not cookies, to function. When you add a client, update your company details, or create an invoice, that data is saved locally on your device using Local Storage. This allows the application to remain fast, offline-capable, and entirely private.</p>
           </section>
 
           <section>
@@ -37,7 +37,7 @@ export default function CookiePolicy() {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">3. Why do we use Cookies?</h2>
-            <p className="mb-4">We use cookies primarily for advertising purposes. Because InvoiceFlow is entirely free, we rely on Google AdSense to monetize the platform.</p>
+            <p className="mb-4">We use cookies primarily for advertising purposes. Because EasyInvofy is entirely free, we rely on Google AdSense to monetize the platform.</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
               <li><strong>Google AdSense:</strong> Third-party vendors, including Google, use cookies to serve ads based on your prior visits to this website or other websites.</li>
               <li>Google's use of advertising cookies enables it and its partners to serve ads based on your visit to our site and/or other sites on the Internet.</li>

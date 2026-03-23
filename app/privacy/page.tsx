@@ -22,12 +22,12 @@ export default function PrivacyPolicy() {
         <div className="space-y-8 text-zinc-300 leading-relaxed">
           <section>
             <p className="mb-4">Last updated: {new Date().toLocaleDateString()}</p>
-            <p>Welcome to InvoiceFlow. We respect your privacy and are committed to protecting it through our compliance with this policy. This Privacy Policy outlines our practices regarding the information we collect and how we use it.</p>
+            <p>Welcome to EasyInvofy. We respect your privacy and are committed to protecting it through our compliance with this policy. This Privacy Policy outlines our practices regarding the information we collect and how we use it.</p>
           </section>
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">1. Data Storage and Processing</h2>
-            <p>InvoiceFlow is designed as a "local-first" or "offline-first" application. This means that <strong>we do not store your financial data, client information, or generated invoices on our servers.</strong></p>
+            <p>EasyInvofy is designed as a "local-first" or "offline-first" application. This means that <strong>we do not store your financial data, client information, or generated invoices on our servers.</strong></p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
               <li>All invoice data you enter is stored exclusively within your browser's local storage (on your device).</li>
               <li>When you generate a PDF invoice, the file is created locally on your device.</li>
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">2. Google AdSense and Cookies</h2>
-            <p>To keep InvoiceFlow free for all users, we use Google AdSense to display advertisements on our website.</p>
+            <p>To keep EasyInvofy free for all users, we use Google AdSense to display advertisements on our website.</p>
             <ul className="list-disc pl-6 mt-4 space-y-2">
               <li>Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites.</li>
               <li>Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visit to our site and/or other sites on the Internet.</li>

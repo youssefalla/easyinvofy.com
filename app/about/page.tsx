@@ -17,7 +17,7 @@ export default function AboutPage() {
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" /> Back to Home
         </Link>
-        <h1 className="text-4xl font-bold mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About InvoiceFlow</h1>
+        <h1 className="text-4xl font-bold mb-8" style={{ fontFamily: 'var(--font-poppins)' }}>About EasyInvofy</h1>
         
         <div className="space-y-12 text-zinc-300 leading-relaxed">
           
@@ -30,7 +30,7 @@ export default function AboutPage() {
               I found myself wasting precious hours fighting with clunky software just to generate a simple PDF. I was forced to create accounts I didn't want, subscribe to monthly fees for features I never used, or wrangle messy spreadsheets that always seemed to break their own formatting.
             </p>
             <p>
-              I wanted a tool that would allow me to generate a beautiful, professional invoice instantly—no signup, no friction, and no tracking. That’s why I built InvoiceFlow.
+              I wanted a tool that would allow me to generate a beautiful, professional invoice instantly—no signup, no friction, and no tracking. That’s why I built EasyInvofy.
             </p>
           </section>
 
@@ -56,7 +56,7 @@ export default function AboutPage() {
                   <Heart className="w-5 h-5 text-pink-400" />
                 </div>
                 <h3 className="font-medium text-zinc-100 mb-2">Always Free</h3>
-                <p className="text-sm text-zinc-400">We don't believe in paywalling basic business administrative tools. InvoiceFlow will remain free to use forever.</p>
+                <p className="text-sm text-zinc-400">We don't believe in paywalling basic business administrative tools. EasyInvofy will remain free to use forever.</p>
               </div>
             </div>
           </section>
@@ -64,7 +64,7 @@ export default function AboutPage() {
           <section className="mt-12 pt-12 border-t border-white/5">
             <h2 className="text-2xl font-semibold mb-4 text-zinc-100">Contact Us</h2>
             <p className="mb-6">
-              I'm actively working to make InvoiceFlow the best (and fastest) free invoice generator on the internet. Your feedback is what drives the next set of features.
+              I'm actively working to make EasyInvofy the best (and fastest) free invoice generator on the internet. Your feedback is what drives the next set of features.
             </p>
             <div className="bg-[#16161e] border border-violet-500/20 rounded-2xl p-8">
               <p className="font-medium text-zinc-100 mb-2">Got a suggestion or found a bug?</p>
